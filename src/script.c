@@ -507,6 +507,6 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
 
 void StartNewPokeballCaseUI(void)
 {
-    FadeScreen(FADE_TO_BLACK, 0);
+    //FadeScreen(FADE_TO_BLACK, 0);
     CreateTask(Task_OpenBirchCase, 0);
 }
