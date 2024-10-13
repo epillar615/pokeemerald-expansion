@@ -686,6 +686,10 @@ u32 BirchCase_GiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 
         sentToPc = MON_GIVEN_TO_PARTY;
         CopyMon(&gPlayerParty[i], &mon, sizeof(mon));
         gPlayerPartyCount = i + 1;
+        if (gPlayerPartyCount == 1)
+        {
+            VarSet(VAR_STARTER_MON, species); // Player has starter of species
+        }
     }
 
     // set pokédex flags

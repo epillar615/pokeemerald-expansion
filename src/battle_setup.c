@@ -2046,3 +2046,24 @@ u16 CountBattledRematchTeams(u16 trainerId)
 
     return i;
 }
+
+u8 CheckStarter(void)
+{
+  u16 starterSpecies = VarGet(VAR_STARTER_MON);
+    switch (starterSpecies)
+    {
+        default:
+        case SPECIES_TREECKO:
+        case SPECIES_BULBASAUR:
+        case SPECIES_CHIKORITA:
+            return 0; // Rival has torchic
+        case SPECIES_TORCHIC:
+        case SPECIES_CYNDAQUIL:
+        case SPECIES_CHARMANDER:
+            return 1; // Rival has mudkip
+        case SPECIES_MUDKIP:
+        case SPECIES_SQUIRTLE:
+        case SPECIES_TOTODILE:
+            return 2; // Rival has treeko
+    }
+}
