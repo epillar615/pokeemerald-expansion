@@ -15247,7 +15247,7 @@ F_TRAINER_FEMALE |
 #line 6144
             .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
 #line 6143
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -15258,7 +15258,7 @@ F_TRAINER_FEMALE |
 #line 6148
             .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
 #line 6147
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -27337,7 +27337,7 @@ F_TRAINER_FEMALE |
 #line 10910
             .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
 #line 10909
-            .lvl = 10,
+            .lvl = 11,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -27348,7 +27348,7 @@ F_TRAINER_FEMALE |
 #line 10914
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 10913
-            .lvl = 10,
+            .lvl = 11,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -29359,7 +29359,7 @@ F_TRAINER_FEMALE |
 #line 11699
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
 #line 11698
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -29370,7 +29370,7 @@ F_TRAINER_FEMALE |
 #line 11703
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
 #line 11702
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -30027,7 +30027,7 @@ F_TRAINER_FEMALE |
 #line 11961
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11960
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -33461,7 +33461,7 @@ F_TRAINER_FEMALE |
 #line 13357
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 13356
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -33472,7 +33472,7 @@ F_TRAINER_FEMALE |
 #line 13361
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 13360
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -33508,7 +33508,7 @@ F_TRAINER_FEMALE |
 #line 13375
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 13374
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -33521,7 +33521,7 @@ F_TRAINER_FEMALE |
 #line 13379
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 13378
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -35808,7 +35808,7 @@ F_TRAINER_FEMALE |
 #line 14275
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 14274
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -35819,7 +35819,7 @@ F_TRAINER_FEMALE |
 #line 14279
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 14278
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -35851,7 +35851,7 @@ F_TRAINER_FEMALE |
 #line 14292
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 14291
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -35862,7 +35862,7 @@ F_TRAINER_FEMALE |
 #line 14296
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 14295
-            .lvl = 8,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

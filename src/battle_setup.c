@@ -2060,10 +2060,12 @@ u8 CheckStarter(void)
         case SPECIES_TORCHIC:
         case SPECIES_CYNDAQUIL:
         case SPECIES_CHARMANDER:
+        case SPECIES_MAREEP:
             return 1; // Rival has mudkip
         case SPECIES_MUDKIP:
         case SPECIES_SQUIRTLE:
         case SPECIES_TOTODILE:
+        case SPECIES_SANDILE:
             return 2; // Rival has treeko
     }
 }
