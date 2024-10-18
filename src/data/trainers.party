@@ -5504,7 +5504,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dizzy Punch
 - Teeter Dance
 
-Vigaroth
+Vigoroth
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Focus Punch
@@ -12775,24 +12775,60 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Beautifly @ Charti Berry
+Level: 40
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Air Cutter
+- Bug Buzz
+- Quiver Dance
+- Morning Sun
 
-Slugma
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Delcatty (F) @ Silk Scarf
+Level: 42
+Ability: Normalize
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fake Out
+- Heal Bell
+- Attract
+- Assist
 
-Pelipper
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Ampharos @ Magnet
+Level: 42
+Ability: Static
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Cotton Guard
+- Discharge
+- Power Gem
+- Dragon Pulse
 
-Grovyle
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Azumarill @ Leftovers
+Level: 42
+Ability: Sap Sipper
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Superpower
+- Aqua Tail
+- Play Rough
+- Surf
+
+Delphox @ Colbur Berry
+Level: 42
+Ability: Magician
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Psyshock
+- Mystical Fire
+- Light Screen
+- Shadow Ball
+
+Sceptile @ Sceptilite
+Level: 44
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Swords Dance
+- Rock Slide
+- Dragon Pulse
+- Leaf Blade
 
 === TRAINER_MAY_LILYCOVE_TREECKO ===
 Name: MAY
@@ -12800,24 +12836,59 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Beautifly @ Charti Berry
+Level: 40
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Air Cutter
+- Bug Buzz
+- Quiver Dance
+- Morning Sun
 
-Pelipper
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Delcatty (F) @ Silk Scarf
+Level: 42
+Ability: Normalize
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fake Out
+- Heal Bell
+- Attract
+- Assist
 
-Ludicolo
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Florges @ Sitrus Berry
+Level: 41
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Moonblast
+- Pollen Puff
+- Rain Dance
+- Wish
 
-Combusken
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Ludicolo @ Life Orb
+Level: 42
+Ability: Swift Swim
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fake Out
+- Hydro Pump
+- Giga Drain
+- Ice Beam
+
+Ampharos @ Shuca Berry
+Level: 42
+Ability: Static
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Cotton Guard
+- Thunder
+- Power Gem
+- Dragon Pulse
+
+Blaziken @ Blazikenite
+Level: 44
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Blaze Kick
+- Brave Bird
+- Close Combat
+- Earthquake
 
 === TRAINER_MAY_LILYCOVE_TORCHIC ===
 Name: MAY
@@ -12825,24 +12896,59 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tropius
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Beautifly @ Charti Berry
+Level: 40
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Air Cutter
+- Bug Buzz
+- Quiver Dance
+- Giga Drain
 
-Ludicolo
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Delcatty (F) @ Silk Scarf
+Level: 42
+Ability: Normalize
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fake Out
+- Heal Bell
+- Attract
+- Assist
 
-Slugma
-Level: 32
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Florges @ Sitrus Berry
+Level: 41
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Moonblast
+- Pollen Puff
+- Rain Dance
+- Wish
 
-Marshtomp
-Level: 34
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Ludicolo @ Life Orb
+Level: 42
+Ability: Swift Swim
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fake Out
+- Hydro Pump
+- Giga Drain
+- Ice Beam
+
+Ampharos @ Shuca Berry
+Level: 42
+Ability: Static
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Rain Dance
+- Thunder
+- Power Gem
+- Dragon Pulse
+
+Swampert @ Swampertite
+Level: 44
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Earthquake
+- Muddy Water
+- Rock Slide
+- Ice Beam
 
 === TRAINER_JONAH ===
 Name: JONAH
