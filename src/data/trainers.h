@@ -7433,34 +7433,34 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3033
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_SHARPEDO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3035
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 3034
-            .lvl = 31,
+            .lvl = 35,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 3037
-            .species = SPECIES_WINGULL,
+            .species = SPECIES_SWANNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3039
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 3038
-            .lvl = 31,
+            .lvl = 35,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 3041
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_SLOWPOKE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3043
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 3042
-            .lvl = 31,
+            .lvl = 35,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -18004,7 +18004,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7247
-            .species = SPECIES_STARYU,
+            .species = SPECIES_LAPRAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7249
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -18209,12 +18209,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7329
-            .species = SPECIES_STARYU,
+            .species = SPECIES_GOREBYSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7331
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 7330
-            .lvl = 34,
+            .lvl = 36,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -21292,23 +21292,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8546
-            .species = SPECIES_MARILL,
+            .species = SPECIES_EMPOLEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8548
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8547
-            .lvl = 33,
+            .lvl = 36,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 8550
-            .species = SPECIES_SPHEAL,
+            .species = SPECIES_SEALEO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8552
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8551
-            .lvl = 33,
+            .lvl = 36,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -21337,7 +21337,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8563
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_SEADRA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8565
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21523,18 +21523,18 @@ F_TRAINER_FEMALE |
 #line 8634
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8633
-            .lvl = 33,
+            .lvl = 35,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 8636
-            .species = SPECIES_LUVDISC,
+            .species = SPECIES_ALOMOMOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8638
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8637
-            .lvl = 33,
+            .lvl = 36,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -27768,12 +27768,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11091
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_HUNTAIL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11093
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11092
-            .lvl = 34,
+            .lvl = 36,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -42185,7 +42185,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16926
-            .species = SPECIES_STARYU,
+            .species = SPECIES_LAPRAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16928
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -42239,7 +42239,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16947
-            .species = SPECIES_STARYU,
+            .species = SPECIES_LAPRAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16949
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -42293,7 +42293,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16968
-            .species = SPECIES_STARYU,
+            .species = SPECIES_LAPRAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16970
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -42347,7 +42347,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16989
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_LAPRAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16991
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
