@@ -92,6 +92,7 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
+	startquest QUEST_1_MAIN
 	setvar VAR_PETALBURG_GYM_STATE, 2
 	releaseall
 	end
@@ -301,16 +302,19 @@ PetalburgCity_Gym_EventScript_NormanNoBadges::
 
 PetalburgCity_Gym_EventScript_NormanOneBadge::
 	msgbox PetalburgCity_Gym_Text_NormanGoToDewford, MSGBOX_DEFAULT
+	openquestmenu
 	release
 	end
 
 PetalburgCity_Gym_EventScript_NormanTwoBadges::
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
+	openquestmenu
 	release
 	end
 
 PetalburgCity_Gym_EventScript_NormanThreeBadges::
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
+	openquestmenu
 	release
 	end
 
@@ -379,6 +383,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_PETALBURG_GYM
+	updatequest QUEST_1_MAIN, VAR_MAIN_QUEST
 	setvar VAR_PETALBURG_GYM_STATE, 7
 	setflag FLAG_BADGE05_GET
 	special ResetHealLocationFromDewford

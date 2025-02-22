@@ -204,7 +204,7 @@
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GRUBBIN"
               },
               {
                 "min_level": 3,
@@ -284,7 +284,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 33,
@@ -358,12 +358,12 @@
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_SURSKIT"
+                "species": "SPECIES_WEEDLE"
               },
               {
                 "min_level": 2,
                 "max_level": 4,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_CYNDAQUIL"
               }
             ]
           },
@@ -725,7 +725,7 @@
               {
                 "min_level": 12,
                 "max_level": 14,
-                "species": "SPECIES_GULPIN"
+                "species": "SPECIES_KAKUNA"
               },
               {
                 "min_level": 12,
@@ -745,12 +745,12 @@
               {
                 "min_level": 12,
                 "max_level": 14,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_GRUBBIN"
               },
               {
                 "min_level": 12,
                 "max_level": 14,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_PONYTA"
               },
               {
                 "min_level": 12,
@@ -1112,7 +1112,7 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_STUNKY"
               },
               {
                 "min_level": 14,
@@ -1132,7 +1132,7 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_STUNKY"
+                "species": "SPECIES_SNOVER"
               },
               {
                 "min_level": 15,
@@ -1474,12 +1474,12 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_VOLBEAT"
+                "species": "SPECIES_GRUBBIN"
               },
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_ILLUMISE"
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 13,
@@ -9030,32 +9030,32 @@
           "map": "MAP_PETALBURG_CITY",
           "base_label": "gPetalburgCity",
           "water_mons": {
-            "encounter_rate": 1,
+            "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 20,
+                "min_level": 5,
                 "max_level": 30,
                 "species": "SPECIES_MARILL"
               },
               {
-                "min_level": 10,
+                "min_level": 5,
                 "max_level": 20,
-                "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_MARILL"
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "max_level": 15,
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MARILL"
+                "max_level": 15,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_GOLDEEN"
               }
             ]
           },

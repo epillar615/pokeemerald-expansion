@@ -33,6 +33,7 @@
 #include "constants/event_objects.h"
 #include "event_object_movement.h"
 #include "pokemon_icon.h"
+#include "complex_quests.h"
 
 #include "random.h"
 
@@ -143,6 +144,8 @@ static void PrintQuestLocation(s32 questId);
 static void GenerateQuestFlavorText(s32 questId);
 static void UpdateQuestFlavorText(s32 questId);
 static void PrintQuestFlavorText(s32 questId);
+static const u8 *GetQuestDesc(s32 questId);
+static const u8 *GetQuestLocation(s32 questId);
 
 static bool8 IsQuestUnlocked(s32 questId);
 static bool8 IsQuestActiveState(s32 questId);
@@ -155,6 +158,8 @@ static void DetermineSpriteType(s32 questId);
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType);
 static void ResetSpriteState(void);
 static void QuestMenu_DestroySprite(u8 idx);
+static u16 GetSpriteId_Complex(s32 questId);
+static u8 GetSpriteType_Complex(s32 questId);
 
 static void GenerateStateAndPrint(u8 windowId, u32 itemId, u8 y);
 static u8 GenerateSubquestState(u8 questId);
@@ -2005,7 +2010,7 @@ void GenerateQuestLocation(s32 questId)
 {
 	if (!IsSubquestMode())
 	{
-		StringCopy(gStringVar2, sSideQuests[questId].map);
+		StringCopy(gStringVar2, GetQuestLocation(questId));
 	}
 	else
 	{
@@ -2059,7 +2064,7 @@ void GenerateQuestFlavorText(s32 questId)
 }
 void UpdateQuestFlavorText(s32 questId)
 {
-	StringCopy(gStringVar1, sSideQuests[questId].desc);
+	StringExpandPlaceholders(gStringVar1, GetQuestDesc(questId));
 }
 void PrintQuestFlavorText(s32 questId)
 {
@@ -2147,8 +2152,8 @@ void DetermineSpriteType(s32 questId)
 
 	if (IsSubquestMode() == FALSE)
 	{
-		spriteId = sSideQuests[questId].sprite;
-		spriteType = sSideQuests[questId].spritetype;
+		spriteId = GetSpriteId_Complex(questId);
+		spriteType = GetSpriteType_Complex(questId);
 
 		QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot,
 		                       spriteType);
@@ -2807,4 +2812,54 @@ void QuestMenu_ResetMenuSaveData(void)
 	       sizeof(gSaveBlock2Ptr->questData));
 	memset(&gSaveBlock2Ptr->subQuests, 0,
 	       sizeof(gSaveBlock2Ptr->subQuests));
+}
+
+static const u8 *GetQuestLocation(s32 questId)
+{
+    switch (questId) {
+        case QUEST_1_MAIN:
+            return gTable_MainQuestMaps[VarGet(VAR_MAIN_QUEST)];
+		case QUEST_5_ROXANNE:
+            return gTable_FossilQuestMaps[VarGet(VAR_ROXANNE_QUEST)];
+        default:
+            return sSideQuests[questId].map;
+    }
+}
+
+static const u8 *GetQuestDesc(s32 questId)
+{
+    switch (questId) {
+        case QUEST_1_MAIN:
+            return gTable_MainQuestDescs[VarGet(VAR_MAIN_QUEST)];
+		case QUEST_5_ROXANNE:
+            return gTable_FossilQuestDescs[VarGet(VAR_ROXANNE_QUEST)];
+        default:
+            return sSideQuests[questId].desc;
+    }
+}
+
+static u16 GetSpriteId_Complex(s32 questId)
+{
+	switch (questId)
+    {
+		case QUEST_1_MAIN:
+		    return MainQuestSprites[VarGet(VAR_MAIN_QUEST)];
+		case QUEST_5_ROXANNE:
+		    return FossilQuestSprites[VarGet(VAR_ROXANNE_QUEST)];
+		default:
+		    return sSideQuests[questId].sprite;
+	} 
+}
+
+static u8 GetSpriteType_Complex(s32 questId)
+{
+	switch (questId)
+    {
+		case QUEST_1_MAIN:
+		    return MainQuestSpriteTypes[VarGet(VAR_MAIN_QUEST)];
+		case QUEST_5_ROXANNE:
+		    return FossilQuestSpriteTypes[VarGet(VAR_ROXANNE_QUEST)];
+		default:
+		    return sSideQuests[questId].spritetype;
+	} 
 }

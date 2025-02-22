@@ -71,6 +71,10 @@ RusturfTunnel_EventScript_ClearTunnelScene::
 	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_BoyfriendApproachWanda3
 	msgbox RusturfTunnel_Text_WandaReunion, MSGBOX_DEFAULT
 	closemessage
+	msgbox RusturfTunnel_Text_SeeRoxanne, MSGBOX_DEFAULT
+	closemessage
+	startquest QUEST_5_ROXANNE
+	clearflag FLAG_HIDE_RUSTBORO_CITY_ROXANNE
 	call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_WandaAndBoyfriendExit1
 	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandaAndBoyfriendExit
 	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandaAndBoyfriendExit
@@ -501,6 +505,12 @@ RusturfTunnel_Text_ExplainStrength:
 	.string "If a muscular POKéMON were to learn\n"
 	.string "that, it would be able to move even\l"
 	.string "large boulders.$"
+
+RusturfTunnel_Text_SeeRoxanne:
+	.string "Hmmm...\p"
+	.string "Roxanne was looking for a trainer\n"
+	.string "who could shatter boulders,\l"
+	.string "maybe you should see her?$"
 
 RusturfTunnel_Text_WandaReunion:
 	.string "WANDA!\n"

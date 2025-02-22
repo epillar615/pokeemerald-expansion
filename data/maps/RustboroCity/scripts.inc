@@ -13,6 +13,7 @@ RustboroCity_MapScripts::
 RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
 	call Common_EventScript_SetupRivalGfxId
+	call_if_gt VAR_ROXANNE_QUEST, 2, RustboroCity_EventScript_MoveRoxanne
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	goto_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_PositionScientistForExit
@@ -1022,6 +1023,73 @@ RustboroCity_Movement_RivalApproachPlayer7:
 RustboroCity_EventScript_Boy1::
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
+
+RustboroCity_EventScript_Roxanne::
+	lock
+	faceplayer
+	goto_if_gt VAR_ROXANNE_QUEST, 2, RustboroCity_EventScript_Roxanne1Fin
+	goto_if_eq VAR_ROXANNE_QUEST, 2, RustboroCity_EventScript_CompletedRoxanne1
+	goto_if_eq VAR_ROXANNE_QUEST, 1, RustboroCity_EventScript_BegunRoxanne1
+	msgbox RustboroCity_Text_RoxanneQuestStart, MSGBOX_DEFAULT
+	updatequest QUEST_5_ROXANNE, VAR_ROXANNE_QUEST
+	msgbox RustboroCity_Text_RoxanneWontBeChallenge, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_BegunRoxanne1::
+	msgbox RustboroCity_Text_RoxanneWontBeChallenge, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_CompletedRoxanne1::
+	checkitem ITEM_SKULL_FOSSIL
+	goto_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BegunRoxanne1
+	msgbox RustboroCity_Text_Roxanne1Complete, MSGBOX_DEFAULT
+	updatequest QUEST_5_ROXANNE, VAR_ROXANNE_QUEST
+	msgbox RustboroCity_Text_RoxanneFossilRevival, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_Roxanne1Fin::
+	msgbox RustboroCity_Text_RoxanneFossilRevival, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_MoveRoxanne::
+	setflag FLAG_HIDE_RUSTBORO_CITY_ROXANNE
+	return
+
+RustboroCity_Text_RoxanneQuestStart:
+	.string "ROXANNE: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "I'm so glad to see you again.\n"
+	.string "I heard that you're the one\l"
+	.string "who cleared Rusturf Tunnel!\p"
+	.string "I've been looking for POKéMON\n"
+	.string "fossils...\n"
+	.string "and I think Rusturf Tunnel\l"
+	.string "might be the best place to look.\p"
+	.string "Since you cleared the tunnel,\n"
+	.string "I had hoped I could rely on you\l"
+	.string "to look there for me!$"
+
+RustboroCity_Text_RoxanneWontBeChallenge:
+	.string "ROXANNE: I'd just like to see\n"
+	.string "any fossils you find, you can\l"
+	.string "keep them afterwards.\p"
+	.string "Good luck out there {PLAYER}{KUN}!$"
+
+RustboroCity_Text_Roxanne1Complete:
+	.string "ROXANNE: Wow, a SKULL FOSSIL!\p"
+	.string "So SKULL FOSSILS can be found\n"
+	.string "in Rusturf Tunnel?\p"
+	.string "Thank you for showing me this\n"
+	.string "{PLAYER}{KUN}!$"
+
+RustboroCity_Text_RoxanneFossilRevival:
+	.string "ROXANNE: The DEVON CORPORATION\n"
+	.string "have a scientist working for them\n"
+	.string "who is trying to revive POKéMON\l"
+	.string "from fossils.$"
 
 RustboroCity_Text_WeShortenItToDevon:
 	.string "The DEVON CORPORATION…\n"
